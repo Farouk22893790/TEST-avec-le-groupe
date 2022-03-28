@@ -31,9 +31,7 @@ public class Tunisia_NET {
 	
 	
 	
-	@After
-    public void finish(){
-driver.quit();
+	
     }
 		
 		
