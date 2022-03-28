@@ -58,54 +58,9 @@ public class Achat1 extends Tunisia_NET {
             JavascriptExecutor chariot_button = (JavascriptExecutor) driver;  
             chariot_button.executeScript("arguments[0].click();", chariot);
             
-            // attendre 2 seconds
+         
             
-            
-            Thread.sleep(2000);
-  
-            //Click sur le  button commander ***//a[@href=\"//www.tunisianet.com.tn/panier?action=show\"]*** //a[contains (text() ,'Commander')]
            
-            
-            WebElement commander = driver.findElement(By.xpath("//a[contains (text() ,'Commander')]"));
-            JavascriptExecutor commander_button = (JavascriptExecutor) driver;  
-            commander_button.executeScript("arguments[0].click();", commander);
-            
-          
-        //cliquer sur le bouton commander 2
-            
-            
-            WebElement commander1 = driver.findElement(By.xpath("//a[@href=\"https://www.tunisianet.com.tn/commande\"]"));
-            JavascriptExecutor commander1_button = (JavascriptExecutor) driver;  
-            commander1_button.executeScript("arguments[0].click();", commander1);
-            
-            // attendre 2 seconds
-           
-            
-            Thread.sleep(2000);
-            
-            // Write email ***////input[@Name=\"email\"]
-            
-            WebElement email1 = driver.findElement(By.xpath("//*[@id=\"login-form\"]/section/div[1]/div[1]/input")); 
-            JavascriptExecutor email_xx = (JavascriptExecutor) driver;
-            email_xx.executeScript("arguments[0].value='trabelsifarou9@gmail.com';", email1);
-            
-   // Write pass_word // ***//input[@Name=\"password\
-            
-            WebElement pass = driver.findElement(By.xpath("//*[@id=\"login-form\"]/section/div[2]/div[1]/div/input")); 
-            JavascriptExecutor pass_word = (JavascriptExecutor) driver;
-           pass_word.executeScript("arguments[0].value='12345';", pass);
-           
-           // attendre 2 seconds
-          
-           
-           Thread.sleep(2000);
-           
-          //Click sur le  button continuer *** //button[@class="continue btn btn-primary float-xs-right"]
-            
-            WebElement continuer = driver.findElement(By.xpath("//*[@id=\"login-form\"]/footer/button"));
-            JavascriptExecutor CNT_button = (JavascriptExecutor) driver;  
-            CNT_button.executeScript("arguments[0].click();", continuer);
-             
 }
 
 }

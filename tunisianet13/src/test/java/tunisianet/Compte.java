@@ -46,5 +46,53 @@ public class Compte extends Tunisia_NET{
    JavascriptExecutor L_Name = (JavascriptExecutor) driver;
    L_Name.executeScript("arguments[0].value='Trabelsi';", lastname);
 
+<<<<<<< HEAD
+=======
+// attendre 2 seconds
+   Thread.sleep(2000);
+   
+   // ecrire mon mail
+   
+   WebElement email = driver.findElement(By.xpath("//input[@name=\"email\"]")); 
+   JavascriptExecutor ADD_MAIL= (JavascriptExecutor) driver;
+   ADD_MAIL.executeScript("arguments[0].value='trabelsifarou9@gmail.com';", email);
+
+// attendre 2 seconds
+   Thread.sleep(2000);
+   
+   // ecrire mon mot de passe
+   
+   WebElement password = driver.findElement(By.xpath("//input[@name=\"password\"]")); 
+   JavascriptExecutor PAS = (JavascriptExecutor) driver;
+   PAS.executeScript("arguments[0].value='12345';", password);
+
+   //Click sur le  button MONTRER
+   
+   WebElement montrer = driver.findElement(By.xpath("//button[@class=\"btn\"]"));
+   JavascriptExecutor MONT_button = (JavascriptExecutor) driver;  
+   MONT_button.executeScript("arguments[0].click();", montrer);
+
+ 
+   
+// attendre 4 seconds
+   Thread.sleep(4000);
+   
+//Click sur le  button cacher
+   
+   WebElement cacher = driver.findElement(By.xpath("//button[@class=\"btn\"]"));
+   JavascriptExecutor CACH_button = (JavascriptExecutor) driver;  
+   CACH_button.executeScript("arguments[0].click();", cacher);
+
+   
+   
+
+
+//Click sur le  button enregistrer
+   
+   WebElement enregistrer = driver.findElement(By.xpath("//button[@data-link-action=\"save-customer\"]"));
+   JavascriptExecutor ENREG_button = (JavascriptExecutor) driver;  
+   ENREG_button.executeScript("arguments[0].click();", enregistrer);
+	}
+>>>>>>> c9e961eb9b4ef0e61fec834efd2792941e306bc5
 }
 }
