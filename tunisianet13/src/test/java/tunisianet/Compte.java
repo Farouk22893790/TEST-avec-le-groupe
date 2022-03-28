@@ -83,10 +83,7 @@ public class Compte extends Tunisia_NET{
 
    
    
-   // ecrire ma date de naissance
-   WebElement birthday = driver.findElement(By.xpath("//input[@name=\"birthday\"]")); 
-   JavascriptExecutor D_Birthday = (JavascriptExecutor) driver;
-   D_Birthday.executeScript("arguments[0].value='24/01/1995';", birthday);
+
 
 //Click sur le  button enregistrer
    
