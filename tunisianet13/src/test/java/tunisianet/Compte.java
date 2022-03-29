@@ -61,10 +61,7 @@ public class Compte extends Tunisia_NET{
    Thread.sleep(2000);
    
    // ecrire mon mot de passe
-   
-   WebElement password = driver.findElement(By.xpath("//input[@name=\"password\"]")); 
-   JavascriptExecutor PAS = (JavascriptExecutor) driver;
-   PAS.executeScript("arguments[0].value='12345';", password);
+  
 
    //Click sur le  button MONTRER
    
